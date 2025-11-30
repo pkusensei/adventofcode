@@ -1,0 +1,7 @@
+.ionide/
+.fake
+
+bin/
+obj/
+
+*.txt
