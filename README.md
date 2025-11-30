@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # adventofcode
 Advent of Code
 =======
@@ -12,3 +13,6 @@ Advent of Code
 =======
 # Advent of Code 2017
 >>>>>>> a2017/main
+=======
+# Advent of Code 2020
+>>>>>>> a2020/main
