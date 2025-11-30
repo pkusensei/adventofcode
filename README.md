@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # adventofcode
 Advent of Code
 =======
@@ -20,3 +21,6 @@ Advent of Code
 =======
 # Advent of Code 2021
 >>>>>>> a2021/main
+=======
+# Advent of Code 2022
+>>>>>>> a2022/main
