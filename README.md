@@ -1,31 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# adventofcode
-Advent of Code
-=======
-# [Advent of Code 2019](https://adventofcode.com/2019)
->>>>>>> a2019/main
-=======
-# Advent of Code 2018
->>>>>>> a2018/main
-=======
-# Advent of Code 2017
->>>>>>> a2017/main
-=======
-# Advent of Code 2020
->>>>>>> a2020/main
-=======
-# Advent of Code 2021
->>>>>>> a2021/main
-=======
-# Advent of Code 2022
->>>>>>> a2022/main
-=======
+
 # Advent of Code 2023
 
 ### 01
@@ -183,4 +156,32 @@ Ah math and line intersections and slopes. Part 2 owes many thanks to [u/TheZige
 - Now use `y = mx + b` to find `pos_x`.
 
 Tried to use `z3` too, but it seems broken on Windows, ironically as an MS project. 
->>>>>>> a2023/main
+
+
+
+# Advent of Code 2024
+
+### 1202
+- Wasn't expecting to see LIS here. 
+
+### 1205 
+- Instead of sorting, rebuild a new vec.
+
+### 1209
+- Apparently cloning is really expensive. 
+
+### 1211 
+- HashMap::entry() is much safer/less error prone than insert(). 
+
+### 1212
+- Trying to be smart is actually stupid. 
+
+### 1216
+- Dijkstra. The node/state should be (position, direction).
+
+### 1218
+- Again, DSU is useful. 
+
+### 1223
+- Bron-Kerbosch algorithm. Fancy. 
+
