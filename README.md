@@ -185,3 +185,10 @@ Tried to use `z3` too, but it seems broken on Windows, ironically as an MS proje
 ### 1223
 - Bron-Kerbosch algorithm. Fancy. 
 
+
+
+# Advent of Code 2025
+
+### 1210
+- Couldn't get z3 to work. Don't want to dig into its build script. Instead used [microlp](https://docs.rs/microlp/latest/microlp/).
+

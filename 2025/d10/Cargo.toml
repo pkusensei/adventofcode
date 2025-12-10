@@ -1,0 +1,9 @@
+[package]
+name = "d10"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fxhash = { workspace = true }
+itertools = { workspace = true }
+microlp = "^0.2"
