@@ -54,6 +54,40 @@ pub fn p2(s: &str) -> u64 {
     freq.get("out").map(|f| f[2]).unwrap_or_default()
 }
 
+pub fn solve(s: &str) -> [u64; 2] {
+    let map = parse(s);
+    let mut memo = FxHashMap::default();
+    let p1 = dfs(&map, "you", "out", &mut memo);
+    let a = dfs(&map, "svr", "fft", &mut memo)
+        * dfs(&map, "fft", "dac", &mut memo)
+        * dfs(&map, "dac", "out", &mut memo);
+    let b = dfs(&map, "svr", "dac", &mut memo)
+        * dfs(&map, "dac", "fft", &mut memo)
+        * dfs(&map, "fft", "out", &mut memo);
+    let p2 = a + b;
+    [p1, p2]
+}
+
+fn dfs<'a>(
+    map: &FxHashMap<&'a str, Vec<&'a str>>,
+    start: &'a str,
+    goal: &'a str,
+    memo: &mut FxHashMap<(&'a str, &'a str), u64>,
+) -> u64 {
+    if start == goal {
+        return 1;
+    }
+    if let Some(&v) = memo.get(&(start, goal)) {
+        return v;
+    }
+    let mut res = 0;
+    for &next in map.get(start).unwrap_or(&vec![]) {
+        res += dfs(map, next, goal, memo);
+    }
+    memo.insert((start, goal), res);
+    res
+}
+
 fn parse(s: &str) -> FxHashMap<&str, Vec<&str>> {
     s.trim()
         .lines()
@@ -102,5 +136,7 @@ mod tests {
 
         assert_eq!(p2(SAMPLE2), 2);
         assert_eq!(p2(INPUT), 502447498690860);
+
+        assert_eq!(solve(INPUT), [555, 502447498690860]);
     }
 }

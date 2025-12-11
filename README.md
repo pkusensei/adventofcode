@@ -189,6 +189,39 @@ Tried to use `z3` too, but it seems broken on Windows, ironically as an MS proje
 
 # Advent of Code 2025
 
+### 1203
+
+- Monotonic stack. 
+- Track available elements.
+
+### 1205
+
+- Merge Intervals.
+- Binary search.
+
+### 1206
+
+- Could have transposed input matrix I guess.
+
+### 1207
+
+- Rolling array dp.
+
+### 1208 
+
+- DSU.
+
+### 1209
+
+- Collision detection. 
+- Model edge/line as thin rectangle.
+
 ### 1210
 - Couldn't get z3 to work. Don't want to dig into its build script. Instead used [microlp](https://docs.rs/microlp/latest/microlp/).
+
+### 1211
+
+- Topological sort. 
+- Watch input shape.
+- Or just use dfs/memo with any sequence.
 
