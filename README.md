@@ -217,7 +217,10 @@ Tried to use `z3` too, but it seems broken on Windows, ironically as an MS proje
 - Model edge/line as thin rectangle.
 
 ### 1210
+
 - Couldn't get z3 to work. Don't want to dig into its build script. Instead used [microlp](https://docs.rs/microlp/latest/microlp/).
+- A bifurcate/dfs solution is also viable and less cheaty. Credits to [u/tenthmascot](https://www.reddit.com/r/adventofcode/comments/1pk87hl/2025_day_10_part_2_bifurcate_your_way_to_victory/) and to [u/_RcCookie_](https://github.com/Rc-Cookie/Advent-of-Code-25/blob/6ea776bf1de2be72e5f206f587ddd78f3f7ed87f/src/main/java/de/rccookie/aoc/aoc25/Solution10.java)
+]
 
 ### 1211
 
